@@ -17,6 +17,15 @@
 	
 	
 	<dependencies>
+	<!-- 롭복 -->
+		<dependency>
+  			<groupId>org.projectlombok</groupId>
+  			<artifactId>lombok</artifactId>
+  			<scope>provided</scope>
+  			<version>1.16.10</version>
+		</dependency>
+	
+		
 	<!-- Tiles3 -->
         <dependency>
              <groupId>org.apache.tiles</groupId>
