@@ -6,7 +6,6 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/main.css" />"/>
 <title>Welcome~</title>
 </head>
 
@@ -18,9 +17,6 @@
 	<div id="nav">
 		<tiles:insertAttribute name="nav"/>
 	</div>	
-	<div id="left">
-		<tiles:insertAttribute name="left"/>
-	</div>
 
 	<div id="content">
 		<tiles:insertAttribute name="content"/>
