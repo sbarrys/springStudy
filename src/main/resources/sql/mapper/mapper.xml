@@ -1,0 +1,8 @@
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.steveleejava.sample.dao.CommonDao">
+  <select id="testSql" resultType="String">
+   select sn from tb_card_user where id =#{userIDparam}
+  </select>
+</mapper>

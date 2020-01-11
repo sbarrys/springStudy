@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 
 @Controller
-
 public class HomeController {
 	
 	@Value("${db.id}") //이런식으로 value어노테이션에게  sevlet-context에서 bean의 property로 주입된 변수명을 주면  아래 변수에 주입된다.
