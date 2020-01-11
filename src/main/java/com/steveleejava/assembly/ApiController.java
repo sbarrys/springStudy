@@ -37,7 +37,7 @@ public class ApiController {
 	RestTemplate resttemplate= new RestTemplate();
 	
 	@GetMapping("/t1")
-    public void getT1(HttpServletRequest request, HttpServletResponse response,Model model) throws ParseException {
+    public String getT1(HttpServletRequest request, HttpServletResponse response,Model model) throws ParseException {
 		JSONParser jsonParse= new JSONParser();
 		JSONObject jsonObject=new JSONObject();
 		JSONArray jsonArray = new JSONArray();
@@ -56,7 +56,9 @@ public class ApiController {
 			list.add(new JsonTest(senttype,sentcont,sentno));
 			
 		}
-		model.addAttribute(list);
+		model.addAttribute("restRES_arraylist",list);
+		return "tiles.layout";
+
 	}
 
 }
